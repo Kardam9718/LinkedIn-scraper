@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Leads from Google Search",
+  "version": "2.0.0",
+  "description": "Extract LinkedIn profile leads from Google results across multiple pages and export CSV.",
+  "permissions": [
+    "tabs",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Generate LinkedIn Leads"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

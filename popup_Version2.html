@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Lead Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 320px; padding: 12px; margin: 0; }
+    h3 { margin: 0 0 10px; }
+    label { display: block; font-size: 13px; margin: 8px 0 4px; }
+    input { width: 100%; box-sizing: border-box; padding: 8px; font-size: 14px; }
+    button { margin-top: 12px; width: 100%; padding: 10px; border: none; background: #0a66c2; color: #fff; font-weight: bold; cursor: pointer; }
+    .hint { font-size: 12px; color: #666; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h3>LinkedIn Lead Generator</h3>
+
+  <label for="jobTitle">Job Title</label>
+  <input id="jobTitle" type="text" placeholder="e.g. Software Engineer" />
+
+  <label for="location">Location</label>
+  <input id="location" type="text" placeholder="e.g. Bangalore" />
+
+  <label for="maxPages">Max Pages</label>
+  <input id="maxPages" type="number" min="1" max="20" value="3" />
+
+  <button id="generateBtn">Generate Leads</button>
+  <div class="hint">Auto-scrapes multiple pages and downloads one CSV.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
